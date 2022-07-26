@@ -1,13 +1,5 @@
-import express from 'express';
+import app from "./app";
 
-const app = express()
+app.listen(8080)
 
-app.use(express.json())
-
-app.get('/', (req,res) =>{
-  res.send('Olá mundo')
-})
-
-app.listen(8080, () => {
-  console.log("Teste")
-})
+console.log("Running!...")
